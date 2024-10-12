@@ -1,6 +1,6 @@
 "use client";
 
-import CatalogueCard from "./CatalogueCard";
+import CatalogueCard from "./CatalogueCard/CatalogueCard";
 import SectionTitle from "./SectionTitle";
 import { motion } from "framer-motion";
 
@@ -18,7 +18,7 @@ export default function ProductionHomepage({ text, categories }) {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <CatalogueCard photo={category.photo} title={category.name} />
+            <CatalogueCard photos={category.photos} title={category.name} />
           </motion.div>
         ))}
 
@@ -28,7 +28,7 @@ export default function ProductionHomepage({ text, categories }) {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: categories.length * 0.2 }}
         >
-          <CatalogueCard photo={"/images/all.jpg"} title="УСІ ТОВАРИ" />
+          <CatalogueCard photos={"/images/all.jpg"} title="УСІ ТОВАРИ" />
         </motion.div>
       </div>
     </div>

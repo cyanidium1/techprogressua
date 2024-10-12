@@ -47,7 +47,7 @@ export default async function Home() {
 
     categories = data.map((category) => ({
       name: category.name,
-      photo: category.mainphoto.url,
+      photos: category.mainphoto?.map((photo) => photo.url) || [],
       dropdownItems: category.subcategory.map((sub) => ({
         name: sub.title,
         key: sub.id,
