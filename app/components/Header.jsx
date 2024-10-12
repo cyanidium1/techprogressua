@@ -44,13 +44,13 @@ export default function Header() {
     <>
       <Navbar
         shouldHideOnScroll
-        className="sm:py-7 bg-customDark"
+        className="sm:py-5 bg-customDark"
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         maxWidth="xl"
       >
         {/* Mobile menu toggle and logo */}
-        <NavbarContent className="sm:hidden pr-3" justify="center">
+        <NavbarContent className="sm:hidden pr-2" justify="center">
           <NavbarBrand>
             <Link href="/">
               <Image height={45} src="/images/logo.png" alt="logo" />
@@ -58,20 +58,23 @@ export default function Header() {
           </NavbarBrand>
         </NavbarContent>
 
-        {/* Desktop menu items */}
-        <NavbarContent className="hidden sm:flex gap-4" justify="start">
-          <Link href="/">
-            <Image height={92} src="/images/logo.png" alt="logo" />
-          </Link>
-        </NavbarContent>
+        <div className="flex items-center justify-between w-full">
+          {/* Desktop menu items */}
+          <NavbarContent
+            className="hidden sm:flex !basis-auto !grow-0"
+            justify="start"
+          >
+            <Link href="/">
+              <Image width={210} src="/images/logo.png" alt="logo" />
+            </Link>
+          </NavbarContent>
 
-        <div className="sm:flex sm:gap-2 sm:justify-end sm:items-center">
-          <NavbarContent className="hidden sm:flex xl:gap-8" justify="end">
+          <NavbarContent className="hidden sm:flex xl:gap-8" justify="center">
             {menuItems.map((item, index) => (
               <NavbarItem key={index}>
                 <Link color="foreground" href={item.href}>
                   <p
-                    className={`text-lg font-semibold 
+                    className={`text-base font-semibold 
                       ${
                         currentPath === item.href
                           ? "text-red-500"
@@ -85,10 +88,10 @@ export default function Header() {
             ))}
           </NavbarContent>
 
-          <NavbarContent className="hidden sm:flex lg:ml-[115px]">
+          <NavbarContent className="hidden sm:flex !basis-auto !grow-0">
             <NavbarItem className="relative">
-              <div className="flex flex-col items-center space-y-2 text-white">
-                <div className="text-lg">
+              <div className="flex flex-col items-center text-white">
+                <div className="text-base">
                   <a
                     href="tel:+380991485703"
                     className="hover:text-red-500 transition duration-300"

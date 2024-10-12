@@ -9,14 +9,6 @@ const Socials = () => {
   return (
     <div className="flex space-x-4 mt-2 items-center">
       <a
-        href="https://t.me/yourtelegram"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-red-500 transition duration-300 text-gray-500"
-      >
-        <FaTelegramPlane size={24} />
-      </a>
-      <a
         href="viber://chat?number=%2B380991485703"
         className="hover:text-red-500 transition duration-300 text-gray-500"
       >
@@ -26,9 +18,17 @@ const Socials = () => {
         href="https://wa.me/380991485703"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-red-500 transition duration-300 text-gray-500"
+        className="hover:text-red-500 transition duration-300 text-[#665CAC]"
       >
         <FaWhatsapp size={24} />
+      </a>
+      <a
+        href="https://t.me/yourtelegram"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-red-500 transition duration-300 text-[#0088cc]"
+      >
+        <FaTelegramPlane size={24} />
       </a>
       <a
         href="mailto:yourmail@example.com"
