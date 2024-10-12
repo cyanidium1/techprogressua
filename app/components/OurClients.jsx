@@ -37,22 +37,22 @@ export default function OurClients() {
       name: "КОМУНАЛЬНЕ ГОСПОДАРСТВО",
       imageSrc: "/images/Clients/Komunalne.jpg",
     },
-    {
-      name: "ЛІСНЕ ГОСПОДАРСТВО",
-      imageSrc: "/images/Clients/Lis.jpg",
-    },
-    {
-      name: "ОПАЛЕННЯ",
-      imageSrc: "/images/Clients/Opalenya.jpg",
-    },
-    {
-      name: "САДОВЕ ГОСПОДАРСТВО",
-      imageSrc: "/images/Clients/Sadove.jpg",
-    },
-    {
-      name: "АВТОСЕРВІС (СТО)",
-      imageSrc: "/images/Clients/Sto.jpg",
-    },
+    // {
+    //   name: "ЛІСНЕ ГОСПОДАРСТВО",
+    //   imageSrc: "/images/Clients/Lis.jpg",
+    // },
+    // {
+    //   name: "ОПАЛЕННЯ",
+    //   imageSrc: "/images/Clients/Opalenya.jpg",
+    // },
+    // {
+    //   name: "САДОВЕ ГОСПОДАРСТВО",
+    //   imageSrc: "/images/Clients/Sadove.jpg",
+    // },
+    // {
+    //   name: "АВТОСЕРВІС (СТО)",
+    //   imageSrc: "/images/Clients/Sto.jpg",
+    // },
   ];
 
   return (
