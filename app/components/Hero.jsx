@@ -12,6 +12,7 @@ const Hero = () => {
         className="rounded-xl"
         width={1280}
         height={334}
+        alt="banner"
       />
       <div className="container mx-auto flex justify-around my-8 px-6">
         <div className="flex items-center">

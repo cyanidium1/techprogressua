@@ -53,7 +53,7 @@ export default function Header() {
         <NavbarContent className="sm:hidden pr-3" justify="center">
           <NavbarBrand>
             <Link href="/">
-              <Image height={45} src="/images/logo.png" />
+              <Image height={45} src="/images/logo.png" alt="logo" />
             </Link>
           </NavbarBrand>
         </NavbarContent>
@@ -61,7 +61,7 @@ export default function Header() {
         {/* Desktop menu items */}
         <NavbarContent className="hidden sm:flex gap-4" justify="start">
           <Link href="/">
-            <Image height={92} src="/images/logo.png" />
+            <Image height={92} src="/images/logo.png" alt="logo" />
           </Link>
         </NavbarContent>
 
