@@ -5,8 +5,9 @@ import ProductCard from "../components/Card";
 async function fetchCategoriesAndItems() {
   const query = `
     {
-      allCategories {
+      allCategories(orderBy: order_ASC) {
         name
+        order
         mainphoto {
           url
         }
@@ -38,7 +39,6 @@ async function fetchCategoriesAndItems() {
 
   try {
     const response = await performRequest({ query });
-    categories = response.data.allCategories;
   } catch (error) {
     console.error("Error fetching categories:", error);
   }

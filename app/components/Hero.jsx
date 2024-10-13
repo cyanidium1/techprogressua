@@ -6,7 +6,7 @@ import { FaShop } from "react-icons/fa6";
 import { FaCcVisa } from "react-icons/fa6";
 const Hero = () => {
   return (
-    <section>
+    <section className="mt-3">
       <Image
         src="/images/banner.jpg"
         className="rounded-xl"

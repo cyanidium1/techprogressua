@@ -11,8 +11,9 @@ export default async function Home() {
   // GraphQL запрос для получения категорий и товаров
   const query = `
     {
-      allCategories {
+      allCategories(orderBy: order_ASC) {
         name
+        order
         mainphoto {
           url
         }
@@ -44,15 +45,15 @@ export default async function Home() {
     const response = await performRequest({ query });
     const data = response.data.allCategories;
     items = response.data.allItems;
-
     categories = data.map((category) => ({
       name: category.name,
-      photos: category.mainphoto?.map((photo) => photo.url) || [],
+      // photos: category.mainphoto?.map((photo) => photo.url) || [],
       dropdownItems: category.subcategory.map((sub) => ({
         name: sub.title,
         key: sub.id,
       })),
     }));
+    console.dir(data);
   } catch (error) {
     console.error("Error fetching categories:", error);
   }
