@@ -29,11 +29,16 @@ export default async function Home() {
         mainphotohover {
           url
         }
+        id
         description
         price
         recomended
         newone
         name
+        productivity
+        engine
+        diameter
+        warrancy
       }
     }
   `;
@@ -59,6 +64,7 @@ export default async function Home() {
   }
 
   const recommendedItems = items.filter((item) => item.recomended);
+
   const newItems = items.filter((item) => item.newone);
 
   return (

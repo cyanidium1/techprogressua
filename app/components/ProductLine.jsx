@@ -41,7 +41,11 @@ export default function ProductLine({ title, items }) {
                 name: item.name,
                 price: item.price,
                 description: item.description,
-                driveType: item.driveType, // Можешь добавить другие поля, если нужно
+                engine: item.engine, // Можешь добавить другие поля, если нужно
+                diameter: item.diameter,
+                productivity: item.productivity,
+                warranty: item.warrancy,
+                id: item.id,
               }}
             />
           </motion.div>
