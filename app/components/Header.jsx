@@ -44,7 +44,7 @@ export default function Header() {
     <>
       <Navbar
         shouldHideOnScroll
-        className="sm:py-5 bg-customDark"
+        className="sm:py-4 bg-customDark"
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
         maxWidth="xl"
